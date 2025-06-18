@@ -1,14 +1,17 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
+import Movtivation from "@/components/motivation";
+import Features from "@/components/features";
+import SupportedBrokers from "@/components/supported_brokers";
 
 export default function Home() {
     return (
-        <div>
+        <div className="space-y-12 md:space-y-24">
             <Navbar />
-
-            <div className="h-6 md:h-14" />
-
             <Hero />
+            <Movtivation />
+            <Features />
+            <SupportedBrokers />
         </div>
     );
 }

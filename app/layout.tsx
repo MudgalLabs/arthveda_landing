@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${ibmPlexSans.variable}  antialiased w-full h-dvh flex justify-center p-4`}
+                className={`${ibmPlexSans.variable}  antialiased w-full flex justify-center px-4`}
             >
                 <div className="w-full max-w-[1200px]">{children}</div>
             </body>
