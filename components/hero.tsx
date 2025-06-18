@@ -34,8 +34,8 @@ export default function Hero() {
                 src="/images/dashboard.png"
                 alt="Arthveda Dashboard"
                 width={1200}
-                height={400}
-                className="w-full h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out"
+                height={800}
+                className="w-full h-auto outline-1 md:outline-0 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out"
                 loading="lazy"
             />
         </main>

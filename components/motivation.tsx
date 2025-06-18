@@ -1,4 +1,4 @@
-import { Layers3, FileBarChart, Sheet, LineChart } from "lucide-react";
+import { Frown, FileBarChart, Sheet, LineChart } from "lucide-react";
 
 export default function Motivation() {
     return (
@@ -10,7 +10,7 @@ export default function Motivation() {
                     <span className="text-primary">
                         {" "}
                         Arthveda gives you <br className="sm:hidden" />
-                        <span className="font-semibold">real insight.</span>
+                        <span className="font-semibold">real insight</span>.
                     </span>
                 </h2>
 
@@ -22,27 +22,27 @@ export default function Motivation() {
 
             <div className="max-w-5xl mx-auto grid gap-10 md:grid-cols-2">
                 <MotivationCard
-                    icon={<Layers3 className="h-6 w-6 text-primary" />}
-                    title="Broker merges every trade into a blob"
-                    text="Traded IRFC 8 times this year? Zerodha shows 1 row in your PnL. Arthveda reconstructs every position — exactly as you traded it."
+                    icon={<Frown className="h-6 w-6 text-primary" />}
+                    title="No tool built for Indian traders"
+                    text="I checked out major tools out there. They were either too expensive or just not built for Indian traders. Arthveda is India first."
                 />
 
                 <MotivationCard
                     icon={<FileBarChart className="h-6 w-6 text-primary" />}
+                    title="Most brokers lump your trades together"
+                    text="Traded IRFC 8 times this year? Zerodha shows 1 row in your PnL. Arthveda intelligently reconstructs every position, so you know exactly how each position played out."
+                />
+
+                <MotivationCard
+                    icon={<LineChart className="h-6 w-6 text-primary" />}
                     title="No meaningful analytics"
-                    text="No performance overview, winners/losers overview? Broker portals leave you guessing. Arthveda shows the metrics that actually help you improve."
+                    text="No performance overview? No idea about your R Factor, Win Rate, Win/Loss PnL, etc? When did you perform well? Is your account growing or your losses growing? Arthveda shows you all the metrics that matter."
                 />
 
                 <MotivationCard
                     icon={<Sheet className="h-6 w-6 text-primary" />}
                     title="Manual journaling is a pain"
-                    text="Spreadsheets are slow, boring, and kill momentum. Arthveda imports trades in seconds from broker. Sync feature is coming soon."
-                />
-
-                <MotivationCard
-                    icon={<LineChart className="h-6 w-6 text-primary" />}
-                    title="You can’t improve what you can’t see"
-                    text="When did you perform well? What’s your average R? Are your losses growing? Arthveda turns your trading data into a story."
+                    text="Spreadsheets are slow, boring, and kill momentum. Arthveda imports trades in seconds from your broker. Sync feature coming soon."
                 />
             </div>
         </section>
