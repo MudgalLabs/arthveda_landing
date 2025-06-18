@@ -116,10 +116,10 @@ select:-webkit-autofill:focus {
 /* Typography */
 
 @utility big-heading {
-    @apply font-heading text-[32px] font-bold;
+    @apply font-heading text-[32px] font-medium;
 }
 @utility heading {
-    @apply font-heading text-[24px] font-semibold;
+    @apply font-heading text-[24px] font-medium;
 }
 @utility sub-heading {
     @apply font-heading text-[20px] font-medium;
