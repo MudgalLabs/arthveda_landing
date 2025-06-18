@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import Movtivation from "@/components/motivation";
 import Features from "@/components/features";
 import SupportedBrokers from "@/components/supported_brokers";
+import Footer from "@/components/footer";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Movtivation />
             <Features />
             <SupportedBrokers />
+            <Footer />
         </div>
     );
 }

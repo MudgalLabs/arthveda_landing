@@ -19,7 +19,7 @@ export default function Navbar() {
                         <li className="w-fit">
                             <Link href="/">
                                 <Image
-                                    src="/branding.svg"
+                                    src="/svgs/branding.svg"
                                     alt="Picture of the author"
                                     width={156}
                                     height={0}

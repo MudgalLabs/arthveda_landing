@@ -1,4 +1,25 @@
+"use client";
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+
+// Slide-in animation variants
+const slideLeft: Variants = {
+    hidden: { opacity: 0, x: -60 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.6, ease: "easeOut" },
+    },
+};
+
+const slideRight: Variants = {
+    hidden: { opacity: 0, x: 60 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.6, ease: "easeOut" },
+    },
+};
 
 export default function Features() {
     return (
@@ -20,15 +41,24 @@ export default function Features() {
                 </p>
             </div>
 
-            <div className="mt-16 space-y-24 [&_img]:outline-2 [&_img]:outline-offset-1 [&_img]:outline-accent-muted [&_img]:hover:outline-accent [&_img]:transition-all [&_img]:duration-300 [&_img]:ease-in-out [&_img]:lg:w-4/6 [&_img]:rounded-sm">
+            <div className="mt-16 space-y-24 [&_img]:outline-2 [&_img]:outline-offset-1 [&_img]:outline-accent-muted [&_img]:hover:outline-accent [&_img]:transition-all [&_img]:duration-300 [&_img]:ease-in-out [&_img]:rounded-sm">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
-                    <Image
-                        src="/images/dashboard.png"
-                        alt="Analytics Dashboard"
-                        width={1200}
-                        height={900}
-                    />
-                    <div className="md:w-1/2 space-y-4">
+                    <motion.div
+                        variants={slideLeft}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="w-full lg:w-4/6"
+                    >
+                        <Image
+                            src="/images/dashboard.png"
+                            alt="Analytics Dashboard"
+                            width={1200}
+                            height={900}
+                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                        />
+                    </motion.div>
+                    <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
                             Analytics Dashboard
                         </h3>
@@ -49,13 +79,22 @@ export default function Features() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
-                    <Image
-                        src="/images/import_positions.png"
-                        alt="Import from broker"
-                        width={1200}
-                        height={900}
-                    />
-                    <div className="md:w-1/2 space-y-4">
+                    <motion.div
+                        variants={slideRight}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="w-full lg:w-4/6"
+                    >
+                        <Image
+                            src="/images/import_positions.png"
+                            alt="Import from broker"
+                            width={1200}
+                            height={900}
+                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                        />
+                    </motion.div>
+                    <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
                             Import from Your Broker
                         </h3>
@@ -68,13 +107,22 @@ export default function Features() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row items-center gap-12">
-                    <Image
-                        src="/images/explore_positions.png"
-                        alt="Explore Positions"
-                        width={1200}
-                        height={900}
-                    />
-                    <div className="md:w-1/2 space-y-4">
+                    <motion.div
+                        variants={slideLeft}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="w-full lg:w-4/6"
+                    >
+                        <Image
+                            src="/images/explore_positions.png"
+                            alt="Explore Positions"
+                            width={1200}
+                            height={900}
+                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                        />
+                    </motion.div>
+                    <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
                             Explore Your Positions
                         </h3>
@@ -89,13 +137,22 @@ export default function Features() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
-                    <Image
-                        src="/images/position.png"
-                        alt="View/Add Position"
-                        width={1200}
-                        height={900}
-                    />
-                    <div className="md:w-1/2 space-y-4">
+                    <motion.div
+                        variants={slideRight}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="w-full lg:w-4/6"
+                    >
+                        <Image
+                            src="/images/position.png"
+                            alt="View/Add Position"
+                            width={1200}
+                            height={900}
+                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                        />
+                    </motion.div>
+                    <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
                             View/Add Position
                         </h3>
