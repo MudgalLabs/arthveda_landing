@@ -6,10 +6,12 @@ export default function SupportedBrokers() {
         {
             name: "Groww",
             svg: "/svgs/groww.svg",
+            homepage: "https://groww.in/",
         },
         {
             name: "Zerodha",
             svg: "/svgs/zerodha.svg",
+            homepage: "https://zerodha.com/",
         },
         // {
         //     name: "Upstox",
@@ -32,21 +34,27 @@ export default function SupportedBrokers() {
                 </h2>
 
                 <p className="mt-4 text-base md:text-lg text-foreground-muted max-w-2xl mx-auto">
-                    Arthveda already supports India’s most used equity brokers,
-                    with more on the way.
+                    Arthveda already supports India’s most used brokers, with
+                    more on the way.
                 </p>
             </div>
 
             <div className="flex flex-col items-center sm:flex-wrap">
                 <div className="flex flex-col items-center justify-center gap-12 sm:flex-row">
-                    {brokers.map(({ name, svg }) => (
-                        <Image
+                    {brokers.map(({ name, svg, homepage }) => (
+                        <a
+                            href={homepage}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={name}
-                            src={svg}
-                            alt={`${name} logo`}
-                            width={150}
-                            height={0}
-                        />
+                        >
+                            <Image
+                                src={svg}
+                                alt={`${name} logo`}
+                                width={150}
+                                height={0}
+                            />
+                        </a>
                     ))}
                 </div>
             </div>

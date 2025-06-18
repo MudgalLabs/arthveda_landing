@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="border-t border-accent-muted">
-            <div className="px-6 py-10 flex-center">
+            <div className="py-10 flex-center">
                 <div className="space-y-2">
-                    <p className="inline-block text-foreground">
+                    <p className="text-sm sm:text-base inline-block text-foreground">
                         <span className="font-semibold text-foreground">
                             Arthveda{" "}
                         </span>
@@ -14,7 +14,8 @@ export default function Footer() {
                         <Link
                             href="https://github.com/MudgalLabs"
                             target="_blank"
-                            className="text-base! inline-flex items-center"
+                            rel="noopener noreferrer"
+                            className="text-sm sm:text-base! inline-flex items-center"
                         >
                             Mudgal Labs <ArrowUpRight size={18} />
                         </Link>

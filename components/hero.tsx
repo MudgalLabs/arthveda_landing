@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Github } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/ui/button";
@@ -41,15 +40,28 @@ export default function Hero() {
 
             <p className="text-center text-sm md:text-base lg:text-xl text-foreground-muted">
                 Arthveda lets you import trades, unlock analytics, and explore
-                positions — all in seconds.
+                positions — open source and free!
             </p>
 
             <div className="h-8" />
 
             <div className="[&_button]:w-full [&_button]:sm:w-fit flex justify-center gap-x-2">
-                <Button variant="secondary">
-                    Star us on Github <Github />
-                </Button>
+                <a
+                    href="https://github.com/MudgalLabs/arthveda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button variant="secondary">
+                        Star us on Github
+                        <Image
+                            src="/svgs/github.svg"
+                            alt="GitHub logo"
+                            width={24}
+                            height={24}
+                            className="inline-block ml-1"
+                        />
+                    </Button>
+                </a>
 
                 <Button>Open Demo</Button>
             </div>
@@ -58,16 +70,22 @@ export default function Hero() {
 
             {/* Inject animation styles */}
             <style>{slideInStyles}</style>
-            <Image
-                src="/images/dashboard.png"
-                alt="Arthveda Dashboard"
-                width={1200}
-                height={800}
-                className={`w-full h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out
-                    ${showImage ? "animate-slide-in-bottom" : "opacity-0"}
-                `}
-                loading="lazy"
-            />
+            <a
+                href="/images/dashboard.png"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Image
+                    src="/images/dashboard.png"
+                    alt="Arthveda Dashboard"
+                    width={1200}
+                    height={800}
+                    className={`w-full h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out
+                        ${showImage ? "animate-slide-in-bottom" : "opacity-0"}
+                    `}
+                    loading="lazy"
+                />
+            </a>
         </main>
     );
 }

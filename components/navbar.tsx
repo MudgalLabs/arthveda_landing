@@ -42,6 +42,25 @@ export default function Navbar() {
                                 Supported Brokers
                             </Link>
                         </li>
+                        <li>
+                            <a
+                                href="https://discord.com/invite/QtFxX6g3Ev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Discord
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://github.com/MudgalLabs/arthveda"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+                        </li>
                     </div>
 
                     <div className="hidden md:inline-block">
@@ -94,6 +113,24 @@ export default function Navbar() {
                             >
                                 Supported Brokers
                             </Link>
+                        </li>
+                        <li>
+                            <a
+                                href="https://discord.com/invite/QtFxX6g3Ev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Discord
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/MudgalLabs/arthveda"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
                         </li>
                         <li>
                             <Button

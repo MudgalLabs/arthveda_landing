@@ -50,13 +50,19 @@ export default function Features() {
                         viewport={{ once: true, amount: 0.3 }}
                         className="w-full lg:w-4/6"
                     >
-                        <Image
-                            src="/images/dashboard.png"
-                            alt="Analytics Dashboard"
-                            width={1200}
-                            height={900}
-                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
-                        />
+                        <a
+                            href="/images/dashboard.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src="/images/dashboard.png"
+                                alt="Analytics Dashboard"
+                                width={1200}
+                                height={900}
+                                className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                            />
+                        </a>
                     </motion.div>
                     <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
@@ -86,13 +92,19 @@ export default function Features() {
                         viewport={{ once: true, amount: 0.3 }}
                         className="w-full lg:w-4/6"
                     >
-                        <Image
-                            src="/images/import_positions.png"
-                            alt="Import from broker"
-                            width={1200}
-                            height={900}
-                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
-                        />
+                        <a
+                            href="/images/import_positions.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src="/images/import_positions.png"
+                                alt="Import from broker"
+                                width={1200}
+                                height={900}
+                                className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                            />
+                        </a>
                     </motion.div>
                     <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
@@ -114,13 +126,19 @@ export default function Features() {
                         viewport={{ once: true, amount: 0.3 }}
                         className="w-full lg:w-4/6"
                     >
-                        <Image
-                            src="/images/explore_positions.png"
-                            alt="Explore Positions"
-                            width={1200}
-                            height={900}
-                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
-                        />
+                        <a
+                            href="/images/explore_positions.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src="/images/explore_positions.png"
+                                alt="Explore Positions"
+                                width={1200}
+                                height={900}
+                                className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                            />
+                        </a>
                     </motion.div>
                     <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
@@ -144,13 +162,19 @@ export default function Features() {
                         viewport={{ once: true, amount: 0.3 }}
                         className="w-full lg:w-4/6"
                     >
-                        <Image
-                            src="/images/position.png"
-                            alt="View/Add Position"
-                            width={1200}
-                            height={900}
-                            className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
-                        />
+                        <a
+                            href="/images/position.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src="/images/position.png"
+                                alt="View/Add Position"
+                                width={1200}
+                                height={900}
+                                className="w-full rounded-sm transition-all duration-300 ease-in-out outline-2 outline-offset-1 outline-accent-muted hover:outline-accent"
+                            />
+                        </a>
                     </motion.div>
                     <div className="w-full lg:w-2/6 space-y-4">
                         <h3 className="text-xl md:text-2xl font-medium text-foreground">
