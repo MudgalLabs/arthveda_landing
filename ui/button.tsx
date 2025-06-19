@@ -14,14 +14,6 @@ const buttonVariants = cva(
                     "bg-primary text-foreground enabled:hover:bg-primary/90 enabled:active:bg-primary focus-visible:ring-foreground!",
                 secondary:
                     "bg-secondary text-foreground enabled:hover:bg-secondary/80 enabled:active:bg-secondary",
-                outline:
-                    "bg-transparent text-foreground border-1 border-accent-muted enabled:hover:bg-accent-muted",
-                destructive:
-                    "bg-red-bg text-foreground enabled:hover:bg-red-bg/90 focus-visible:ring-foreground!",
-                success:
-                    "bg-green-bg text-foreground enabled:hover:bg-green-bg/90 focus-visible:ring-foreground!",
-                ghost: "enabled:hover:bg-accent-muted enabled:hover:text-foreground",
-                link: "text-link underline-offset-4 hover:underline",
             },
             size: {
                 default: "text-base px-4 py-2 ",

@@ -1,10 +1,10 @@
-import { Frown, FileBarChart, Sheet, LineChart } from "lucide-react";
+import { Rocket, FileBarChart, Sheet, LineChart } from "lucide-react";
 
 export default function Motivation() {
     return (
-        <section id="motivation">
+        <section id="motivation" className="mt-24">
             <div className="text-center mb-14">
-                <h2 className="text-3xl md:big-heading font-normal!">
+                <h2 className="big-heading font-normal!">
                     Brokers give you numbers.
                     <br className="hidden md:block" />
                     <span className="text-primary">
@@ -13,63 +13,75 @@ export default function Motivation() {
                         <span className="font-semibold">real insight</span>.
                     </span>
                 </h2>
-
-                <p className="mt-4 text-base md:text-lg text-foreground-muted max-w-2xl mx-auto">
-                    Arthveda was born because broker reports suck, analytics are
-                    nonexistent, and spreadsheets are just plain boring.
-                </p>
             </div>
 
-            <div className="max-w-5xl mx-auto grid gap-10 md:grid-cols-2">
+            <div className="max-w-4xl mx-auto grid gap-10 md:grid-cols-2">
                 <MotivationCard
-                    icon={<Frown className="h-6 w-6 text-primary" />}
-                    title="No tool built for Indian traders"
-                    text="I checked out major tools out there. They were either too expensive or just not built for Indian traders. Arthveda is India first."
+                    icon={<Rocket className="h-6 w-6 text-primary" />}
+                    title="Built for Indian traders"
+                    content={
+                        <>
+                            <p>Most tools are expensive or irrelevant.</p>
+                            <p>Arthveda is made for {`India's`} market.</p>
+                        </>
+                    }
                 />
 
                 <MotivationCard
                     icon={<FileBarChart className="h-6 w-6 text-primary" />}
-                    title="Most brokers lump your trades together"
-                    text="Traded IRFC 8 times this year? Zerodha shows 1 row in your PnL. Arthveda intelligently reconstructs every position, so you know exactly how each position played out."
+                    title="Brokers merge your trades"
+                    content={
+                        <>
+                            <p>Traded IRFC 8 times? See just 1 row?</p>
+                            <p>Arthveda rebuilds every position for clarity.</p>
+                        </>
+                    }
                 />
 
                 <MotivationCard
                     icon={<LineChart className="h-6 w-6 text-primary" />}
-                    title="No meaningful analytics"
-                    text="No performance overview? No idea about your R Factor, Win Rate, Win/Loss PnL, etc? When did you perform well? Is your account growing or your losses growing? Arthveda shows you all the metrics that matter."
+                    title="No real trading insights"
+                    content={
+                        <>
+                            <p>No R Factor, win rate, or performance trend?</p>
+                            <p>Arthveda shows you what actually matters.</p>
+                        </>
+                    }
                 />
 
                 <MotivationCard
                     icon={<Sheet className="h-6 w-6 text-primary" />}
-                    title="Manual journaling is a pain"
-                    text="Spreadsheets are slow, boring, and kill momentum. Arthveda imports trades in seconds from your broker. Sync feature coming soon."
+                    title="Manual journaling sucks"
+                    content={
+                        <>
+                            <p>Spreadsheets are slow and kill momentum.</p>
+                            <p>Arthveda imports trades in seconds.</p>
+                        </>
+                    }
                 />
             </div>
         </section>
     );
 }
 
-/* ---------- Small reusable card ---------- */
 function MotivationCard({
     icon,
     title,
-    text,
+    content,
 }: {
     icon: React.ReactNode;
     title: string;
-    text: string;
+    content: React.ReactNode;
 }) {
     return (
-        <div className="flex gap-4">
-            {/* icon */}
+        <div className="flex gap-4 border-1 transition-colors border-primary/70 hover:border-primary rounded-md px-4 py-6">
             <div className="shrink-0 mt-1">{icon}</div>
 
-            {/* copy */}
             <div>
                 <h3 className="text-lg font-medium mb-1">{title}</h3>
-                <p className="text-sm text-foreground-muted leading-relaxed">
-                    {text}
-                </p>
+                <div className="text-sm text-foreground-muted leading-relaxed">
+                    {content}
+                </div>
             </div>
         </div>
     );

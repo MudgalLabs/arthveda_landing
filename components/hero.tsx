@@ -1,11 +1,7 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
-import { Button } from "@/ui/button";
+import DemoForm from "@/components/demo_form";
 
-// Add custom animation styles
 const slideInStyles = `
 @keyframes slideInFromBottom {
   0% {
@@ -23,48 +19,24 @@ const slideInStyles = `
 `;
 
 export default function Hero() {
-    const [showImage, setShowImage] = useState(false);
-
-    useEffect(() => {
-        setShowImage(true);
-    }, []);
-
     return (
-        <main>
-            <h1 className="text-[28px] text-center md:text-5xl lg:text-7xl font-medium lg:font-semibold">
+        <main className="mt-12 md:mt-24">
+            <h1 className="w-[80%] flex flex-wrap mx-auto justify-center gap-x-2 md:gap-x-3.5 gap-y-1 md:gap-y-2 text-3xl sm:text-5xl md:text-7xl font-medium lg:font-semibold">
                 Turn every trade{" "}
-                <span className="text-primary">into insight</span>
+                <span className="inline-block text-primary">into insight</span>
             </h1>
 
-            <div className="md:h-4" />
+            <div className="h-6" />
 
-            <p className="text-center text-sm md:text-base lg:text-xl text-foreground-muted">
-                Arthveda lets you import trades, unlock analytics, and explore
-                positions — open source and free!
+            <p className="text-center text-sm sm:text-base md:text-xl text-foreground-muted">
+                Seamless integrations. Powerful analytics.{" "}
+                <br className="block sm:hidden" /> Built exclusively for Indian
+                traders.
             </p>
 
             <div className="h-8" />
 
-            <div className="flex justify-center gap-x-2">
-                <a
-                    href="https://github.com/MudgalLabs/arthveda"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Button variant="secondary">
-                        Star us on Github
-                        <Image
-                            src="/svgs/github.svg"
-                            alt="GitHub logo"
-                            width={24}
-                            height={24}
-                            className="inline-block ml-1"
-                        />
-                    </Button>
-                </a>
-
-                <Button>Open Demo</Button>
-            </div>
+            <DemoForm />
 
             <div className="h-16" />
 
@@ -79,10 +51,8 @@ export default function Hero() {
                     src="/images/dashboard.png"
                     alt="Arthveda Dashboard"
                     width={1200}
-                    height={800}
-                    className={`w-full h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out
-                        ${showImage ? "animate-slide-in-bottom" : "opacity-0"}
-                    `}
+                    height={900}
+                    className={`w-full md:w-[85%] mx-auto h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
                     loading="lazy"
                 />
             </a>

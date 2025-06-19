@@ -32,15 +32,13 @@ export default function Navbar() {
                     {/* Desktop Nav */}
                     <div className="hidden md:flex flex-x md:gap-x-4 lg:gap-x-8 items-center px-2">
                         <li>
+                            <Link href="#brokers">Brokers</Link>
+                        </li>
+                        <li>
                             <Link href="#motivation">Motivation</Link>
                         </li>
                         <li>
                             <Link href="#features">Features</Link>
-                        </li>
-                        <li>
-                            <Link href="#supported-brokers">
-                                Supported Brokers
-                            </Link>
                         </li>
                         <li>
                             <a
@@ -64,20 +62,25 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:inline-block">
-                        <li>
-                            <Button>{`Get started - it's free!`}</Button>
-                        </li>
+                        <a
+                            href="https://arthveda.ceoshikhar.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <li>
+                                <Button>{`Get started - it's free!`}</Button>
+                            </li>
+                        </a>
                     </div>
 
                     <div className="md:hidden flex items-center ml-auto">
-                        <Button
-                            variant="ghost"
+                        <button
                             aria-label="Open menu"
                             onClick={() => setMenuOpen((v) => !v)}
-                            className="size-9"
+                            className="size-9 text-foreground-muted"
                         >
-                            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-                        </Button>
+                            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+                        </button>
                     </div>
                 </ul>
 
@@ -92,6 +95,14 @@ export default function Navbar() {
                     <ul className="flex flex-col gap-y-2 px-4 py-4">
                         <li>
                             <Link
+                                href="#brokers"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                Brokers
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 href="#motivation"
                                 onClick={() => setMenuOpen(false)}
                             >
@@ -104,14 +115,6 @@ export default function Navbar() {
                                 onClick={() => setMenuOpen(false)}
                             >
                                 Features
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="#supported-brokers"
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                Supported Brokers
                             </Link>
                         </li>
                         <li>
@@ -133,12 +136,18 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <Button
-                                className="w-full mt-4"
-                                onClick={() => setMenuOpen(false)}
+                            <a
+                                href="https://arthveda.ceoshikhar.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                {`Get started - it's free!`}
-                            </Button>
+                                <Button
+                                    className="w-full mt-4"
+                                    onClick={() => setMenuOpen(false)}
+                                >
+                                    {`Get started - it's free!`}
+                                </Button>
+                            </a>
                         </li>
                     </ul>
                 </div>

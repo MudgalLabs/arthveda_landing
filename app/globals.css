@@ -58,6 +58,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 96px;
+}
+
 body {
     background: var(--color-background);
     color: var(--color-foreground);
@@ -116,7 +120,7 @@ select:-webkit-autofill:focus {
 /* Typography */
 
 @utility big-heading {
-    @apply font-heading text-[32px] font-medium;
+    @apply font-heading text-[24px] sm:text-[32px] font-medium;
 }
 @utility heading {
     @apply font-heading text-[24px] font-medium;
