@@ -51,12 +51,12 @@ export default function Features() {
                         className="w-full lg:w-4/6"
                     >
                         <a
-                            href="/images/dashboard.png"
+                            href="/images/dashboard_zoomed.png"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <Image
-                                src="/images/dashboard.png"
+                                src="/images/dashboard_zoomed.png"
                                 alt="Analytics Dashboard"
                                 width={1200}
                                 height={900}
