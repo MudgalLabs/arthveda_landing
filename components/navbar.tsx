@@ -30,7 +30,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Nav */}
-                    <div className="hidden md:flex flex-x gap-x-8 items-center">
+                    <div className="hidden md:flex flex-x md:gap-x-4 lg:gap-x-8 items-center px-2">
                         <li>
                             <Link href="#motivation">Motivation</Link>
                         </li>
