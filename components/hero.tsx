@@ -45,7 +45,7 @@ export default function Hero() {
 
             <div className="h-8" />
 
-            <div className="[&_button]:w-full [&_button]:sm:w-fit flex justify-center gap-x-2">
+            <div className="flex justify-center gap-x-2">
                 <a
                     href="https://github.com/MudgalLabs/arthveda"
                     target="_blank"

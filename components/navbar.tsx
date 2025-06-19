@@ -11,7 +11,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="sticky top-2 z-50  border-1 rounded-md sm:rounded-xl border-surface-border p-3 backdrop-blur-md backdrop-saturate-150 bg-surface-bg/80 ">
+        <nav className="sticky top-2 z-50  border-1 rounded-md md:rounded-2xl border-surface-border p-3 backdrop-blur-md backdrop-saturate-150 bg-surface-bg/80 ">
             <div className="relative">
                 <ul className="w-full flex justify-between items-center">
                     {/* Branding */}
