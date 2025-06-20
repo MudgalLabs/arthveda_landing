@@ -98,7 +98,7 @@ export default function Navbar() {
                         <button
                             aria-label="Open menu"
                             onClick={() => setMenuOpen((v) => !v)}
-                            className="size-9 text-foreground-muted"
+                            className="text-foreground-muted"
                         >
                             {menuOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
