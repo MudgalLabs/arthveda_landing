@@ -85,10 +85,10 @@ export default function Hero() {
 
             <div className="h-6" />
 
-            <p className="text-center text-sm sm:text-base md:text-xl text-foreground-muted">
+            <p className="text-center text-sm sm:text-base md:text-xl text-foreground">
                 Seamless integrations. Powerful analytics.{" "}
                 <br className="block sm:hidden" />{" "}
-                <span className="text-foreground">
+                <span className="font-medium">
                     Built exclusively for Indian traders.
                 </span>
             </p>

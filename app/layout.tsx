@@ -10,7 +10,8 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
     title: "Arthveda",
-    description: "Open Source Trading Analytics Platform",
+    description:
+        "Trading analytics platform with seamless broker integrations built exclusively for Indian traders.",
 };
 
 export default function RootLayout({
