@@ -53,8 +53,8 @@ export default function Brokers() {
                             src={svg}
                             alt={`${name} logo`}
                             width={150}
-                            height={0}
-                            // className="grayscale contrast-60 hover:grayscale-0 hover:contrast-100"
+                            height={40}
+                            className="grayscale contrast-60 hover:grayscale-0 hover:contrast-100"
                         />
                     </a>
                 ))}

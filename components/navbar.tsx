@@ -20,10 +20,18 @@ export default function Navbar() {
                             <Link href="/">
                                 <Image
                                     src="/svgs/branding.svg"
-                                    alt="Picture of the author"
+                                    alt="Arthveda Logo Branding"
                                     width={156}
-                                    height={0}
-                                    className="h-auto"
+                                    height={40}
+                                    className="h-auto hidden sm:inline-block"
+                                />
+
+                                <Image
+                                    src="/svgs/logo.svg"
+                                    alt="Arthveda Logo Branding"
+                                    width={32}
+                                    height={32}
+                                    className="h-auto inline-block md:hidden"
                                 />
                             </Link>
                         </li>
@@ -73,7 +81,20 @@ export default function Navbar() {
                         </a>
                     </div>
 
-                    <div className="md:hidden flex items-center ml-auto">
+                    <div className="md:hidden flex items-center gap-4">
+                        <a
+                            href="https://arthveda.ceoshikhar.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button
+                                className="w-full"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                {`Get started - it's free!`}
+                            </Button>
+                        </a>
+
                         <button
                             aria-label="Open menu"
                             onClick={() => setMenuOpen((v) => !v)}
@@ -86,7 +107,7 @@ export default function Navbar() {
 
                 {/* Mobile Dropdown */}
                 <div
-                    className={`md:hidden absolute top-11 left-0 w-full bg-surface-bg border border-surface-border shadow-lg z-50 transition-all duration-300 ease-out rounded-md will-change-transform ${
+                    className={`md:hidden absolute top-14 left-0 w-full bg-surface-bg border border-surface-border shadow-lg z-50 transition-all duration-300 ease-out rounded-md will-change-transform ${
                         menuOpen
                             ? "opacity-100 pointer-events-auto translate-y-0 scale-100"
                             : "opacity-0 pointer-events-none -translate-y-2 scale-[0.98]"
