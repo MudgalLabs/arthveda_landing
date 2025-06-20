@@ -21,7 +21,7 @@ export default function Footer() {
                     </p>
 
                     <p className="text-sm sm:text-base">
-                        Give feedback, request a feature, report a bug or
+                        Give feedback, request a feature, report a bug or{" "}
                         <br className="block sm:hidden" />
                         just say hi on{" "}
                         <span className="font-bold text-sm sm:text-base">
