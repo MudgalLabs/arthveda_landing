@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { ArrowRight as IconRight } from "lucide-react";
 
-import DemoForm from "@/components/demo_form";
+import { Button } from "@/ui/button";
 
 const slideInStyles = `
 @keyframes slideInFromBottom {
@@ -16,6 +17,62 @@ const slideInStyles = `
 .animate-slide-in-bottom {
   animation: slideInFromBottom 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
 }
+
+@keyframes slideOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(8px);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.arrow-icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.demo-button:hover .arrow-icon {
+  animation: slideOutRight 0.15s ease-in-out forwards, slideInLeft 0.15s ease-in-out 0.15s forwards;
+}
+
+.demo-button:not(:hover) .arrow-icon {
+  animation: slideOutLeft 0.15s ease-in-out forwards, slideInRight 0.15s ease-in-out 0.15s forwards;
+}
 `;
 
 export default function Hero() {
@@ -30,13 +87,26 @@ export default function Hero() {
 
             <p className="text-center text-sm sm:text-base md:text-xl text-foreground-muted">
                 Seamless integrations. Powerful analytics.{" "}
-                <br className="block sm:hidden" /> Built exclusively for Indian
-                traders.
+                <br className="block sm:hidden" />{" "}
+                <span className="text-foreground">
+                    Built exclusively for Indian traders.
+                </span>
             </p>
-
             <div className="h-8" />
 
-            <DemoForm />
+            {/* <DemoForm /> */}
+            <div className="flex-center">
+                <a
+                    href="https://demo.arthveda.ceoshikhar.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button className="demo-button">
+                        Open Demo
+                        <IconRight className="arrow-icon" size={18} />
+                    </Button>
+                </a>
+            </div>
 
             <div className="h-16" />
 
@@ -52,7 +122,7 @@ export default function Hero() {
                     alt="Arthveda Dashboard"
                     width={1900}
                     height={900}
-                    className={`hidden md:block w-full md:w-[85%] mx-auto h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
+                    className={`hidden md:block w-full md:w-[85%] mx-auto h-auto outline-offset-1 outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
                     loading="lazy"
                 />
             </a>
@@ -66,7 +136,7 @@ export default function Hero() {
                     alt="Arthveda Dashboard"
                     width={1900}
                     height={900}
-                    className={`md:hidden w-fullmx-auto h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-sm transition-all duration-300 ease-in-out animate-slide-in-bottom`}
+                    className={`md:hidden w-fullmx-auto h-auto outline-1 outline-offset-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-sm transition-all duration-300 ease-in-out animate-slide-in-bottom`}
                     loading="lazy"
                 />
             </a>

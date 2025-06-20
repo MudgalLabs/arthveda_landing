@@ -5,7 +5,7 @@ export default function Features() {
     return (
         <section id="features" className="mt-24">
             <div className="text-center mb-14">
-                <h2 className="big-heading font-normal!">
+                <h2 className="big-heading">
                     Arthveda gives you tools to track,
                     <br className="hidden md:block" />
                     <span className="text-primary">
@@ -16,7 +16,7 @@ export default function Features() {
                 </h2>
             </div>
 
-            <div className="mt-16 space-y-12 sm:space-y-24 [&_img]:outline-2 [&_img]:outline-offset-1 [&_img]:outline-accent-muted [&_img]:hover:outline-accent [&_img]:transition-all [&_img]:duration-300 [&_img]:ease-in-out [&_img]:rounded-sm [&_li]:text-sm [&_li]sm:text-base">
+            <div className="mt-16 space-y-12 sm:space-y-24 [&_img]:outline-2 [&_img]:outline-offset-1 [&_img]:md:outline-offset-2 [&_img]:outline-accent-muted [&_img]:hover:outline-accent [&_img]:transition-all [&_img]:duration-300 [&_img]:ease-in-out [&_img]:rounded-sm [&_li]:text-sm [&_li]sm:text-base">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="w-full lg:w-4/6">
                         <a

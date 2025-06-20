@@ -4,7 +4,7 @@ export default function Motivation() {
     return (
         <section id="motivation" className="mt-24">
             <div className="text-center mb-14">
-                <h2 className="big-heading font-normal!">
+                <h2 className="big-heading">
                     Brokers give you numbers.
                     <br className="hidden md:block" />
                     <span className="text-primary">
@@ -74,7 +74,7 @@ function MotivationCard({
     content: React.ReactNode;
 }) {
     return (
-        <div className="flex gap-4 border-1 transition-colors border-primary/70 hover:border-primary rounded-md px-4 py-6">
+        <div className="flex gap-4 border-1 transition-colors duration-300 ease-in-out border-foreground-muted hover:border-foreground rounded-md px-4 py-6">
             <div className="shrink-0 mt-1">{icon}</div>
 
             <div>

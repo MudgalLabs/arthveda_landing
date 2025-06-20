@@ -156,20 +156,6 @@ export default function Navbar() {
                                 GitHub
                             </a>
                         </li>
-                        <li>
-                            <a
-                                href="https://arthveda.ceoshikhar.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Button
-                                    className="w-full mt-4"
-                                    onClick={() => setMenuOpen(false)}
-                                >
-                                    {`Get started - it's free!`}
-                                </Button>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

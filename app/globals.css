@@ -120,7 +120,7 @@ select:-webkit-autofill:focus {
 /* Typography */
 
 @utility big-heading {
-    @apply font-heading text-[24px] sm:text-[32px] font-medium;
+    @apply font-heading text-[24px] sm:text-[32px] font-medium leading-tight;
 }
 @utility heading {
     @apply font-heading text-[24px] font-medium;
