@@ -35,9 +35,9 @@ export default function Brokers() {
                     </span>
                 </h2>
 
-                <p className="mt-4 text-base md:text-lg text-foreground-muted max-w-2xl mx-auto">
-                    Arthveda supports these brokers - more integrations on
-                    request.
+                <p className="mt-4 text-sm sm:text-base md:text-lg text-foreground-muted max-w-2xl mx-auto">
+                    Arthveda supports these brokers - more integrations are on
+                    the way!
                 </p>
             </div>
 

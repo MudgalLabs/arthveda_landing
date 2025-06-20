@@ -15,7 +15,7 @@ export default function DemoForm() {
     };
 
     return (
-        <form className="flex justify-center gap-x-2" onSubmit={handleSubmit}>
+        <form className="flex justify-center gap-x-4" onSubmit={handleSubmit}>
             <Input
                 type="email"
                 required
