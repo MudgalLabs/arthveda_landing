@@ -23,7 +23,7 @@ export default function Navbar() {
                                     alt="Arthveda Logo Branding"
                                     width={156}
                                     height={40}
-                                    className="h-auto hidden sm:inline-block"
+                                    className="h-auto hidden md:inline-block"
                                 />
 
                                 <Image

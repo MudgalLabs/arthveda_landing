@@ -50,9 +50,23 @@ export default function Hero() {
                 <Image
                     src="/images/dashboard.png"
                     alt="Arthveda Dashboard"
-                    width={1200}
+                    width={1900}
                     height={900}
-                    className={`w-full md:w-[85%] mx-auto h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
+                    className={`hidden md:block w-full md:w-[85%] mx-auto h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
+                    loading="lazy"
+                />
+            </a>
+            <a
+                href="/images/dashboard.png"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Image
+                    src="/images/dashboard_zoomed.png"
+                    alt="Arthveda Dashboard"
+                    width={1900}
+                    height={900}
+                    className={`md:hidden w-fullmx-auto h-auto outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-sm transition-all duration-300 ease-in-out animate-slide-in-bottom`}
                     loading="lazy"
                 />
             </a>
