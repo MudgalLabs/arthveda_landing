@@ -30,7 +30,7 @@ export default function Footer() {
                     </p>
 
                     <p className="text-center text-xs sm:text-sm text-foreground-muted">
-                        Thank you for being here 🤍
+                        Thank you for being here! 🤍
                     </p>
                 </div>
             </div>
