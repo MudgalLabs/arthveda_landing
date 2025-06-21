@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import { PostHogProvider } from "./providers";
 
 const ibmPlexSans = IBM_Plex_Sans({
     variable: "--font-content",
@@ -24,7 +25,9 @@ export default function RootLayout({
             <body
                 className={`${ibmPlexSans.variable}  antialiased w-full flex justify-center px-4`}
             >
-                <div className="w-full max-w-[1200px]">{children}</div>
+                <PostHogProvider>
+                    <div className="w-full max-w-[1200px]">{children}</div>
+                </PostHogProvider>
             </body>
         </html>
     );

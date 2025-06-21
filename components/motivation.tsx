@@ -5,12 +5,9 @@ export default function Motivation() {
         <section id="motivation" className="mt-24">
             <div className="text-center mb-14">
                 <h2 className="big-heading">
-                    Brokers give you numbers.
-                    <br className="hidden md:block" />
-                    <span className="text-primary">
-                        {" "}
-                        Arthveda gives you <br className="sm:hidden" />
-                        <span className="font-semibold">real insight</span>.
+                    Brokers give you numbers. Arthveda gives you{" "}
+                    <span className="font-semibold! text-primary">
+                        real insight.
                     </span>
                 </h2>
             </div>

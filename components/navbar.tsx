@@ -1,14 +1,31 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import posthog from "posthog-js";
 
 import { Button } from "@/ui/button";
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const getStarted = useMemo(
+        () => (
+            <a
+                href="https://arthveda.ceoshikhar.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => posthog.capture("Clicked Get Started")}
+            >
+                <Button className="w-full" onClick={() => setMenuOpen(false)}>
+                    {`Get started - it's free!`}
+                </Button>
+            </a>
+        ),
+        []
+    );
 
     return (
         <nav className="sticky top-2 z-50  border-1 rounded-md md:rounded-2xl border-surface-border p-3 backdrop-blur-md backdrop-saturate-150 bg-surface-bg/80 ">
@@ -69,31 +86,10 @@ export default function Navbar() {
                         </li>
                     </div>
 
-                    <div className="hidden md:inline-block">
-                        <a
-                            href="https://arthveda.ceoshikhar.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <li>
-                                <Button>{`Get started - it's free!`}</Button>
-                            </li>
-                        </a>
-                    </div>
+                    <div className="hidden md:inline-block">{getStarted}</div>
 
                     <div className="md:hidden flex items-center gap-4">
-                        <a
-                            href="https://arthveda.ceoshikhar.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Button
-                                className="w-full"
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                {`Get started - it's free!`}
-                            </Button>
-                        </a>
+                        {getStarted}
 
                         <button
                             aria-label="Open menu"

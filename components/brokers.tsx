@@ -26,20 +26,16 @@ export default function Brokers() {
     return (
         <section id="brokers" className="mt-24">
             <div className="text-center mb-8">
-                <h2 className="big-heading">
-                    You save hours every week through
-                    <br className="hidden md:block" />
-                    <span className="text-primary">
-                        {" "}
-                        seamless integration <br className="sm:hidden" />
-                        with
-                        <span className="font-semibold"> your broker</span>
+                <h2 className="big-heading md:max-w-[80%] mx-auto">
+                    You save hours every week through seamless integration with{" "}
+                    <span className="text-primary font-semibold!">
+                        your broker.
                     </span>
                 </h2>
 
                 <p className="mt-4 text-sm sm:text-base md:text-lg text-foreground-muted max-w-2xl mx-auto">
-                    Arthveda supports these brokers - more integrations are on
-                    the way!
+                    Arthveda supports these brokers. We welcome request for new
+                    integrations!
                 </p>
             </div>
 

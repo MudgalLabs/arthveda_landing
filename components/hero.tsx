@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { ArrowRight as IconRight } from "lucide-react";
-
-import { Button } from "@/ui/button";
+import OpenDemo from "@/components/open_demo";
 
 const slideInStyles = `
 @keyframes slideInFromBottom {
@@ -94,19 +92,7 @@ export default function Hero() {
             </p>
             <div className="h-8" />
 
-            {/* <DemoForm /> */}
-            <div className="flex-center">
-                <a
-                    href="https://demo.arthveda.ceoshikhar.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Button className="demo-button">
-                        Open Demo
-                        <IconRight className="arrow-icon" size={18} />
-                    </Button>
-                </a>
-            </div>
+            <OpenDemo />
 
             <div className="h-16" />
 

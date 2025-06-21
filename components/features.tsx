@@ -6,12 +6,9 @@ export default function Features() {
         <section id="features" className="mt-24">
             <div className="text-center mb-14">
                 <h2 className="big-heading">
-                    Arthveda gives you tools to track,
-                    <br className="hidden md:block" />
-                    <span className="text-primary">
-                        {" "}
-                        analyze, and improve <br className="sm:hidden" />
-                        <span className="font-semibold">your trading</span>
+                    Arthveda gives you tools to track, analyze, and improve{" "}
+                    <span className="font-semibold! text-primary">
+                        your trading.
                     </span>
                 </h2>
             </div>
@@ -71,7 +68,7 @@ export default function Features() {
                         </h3>
                         <ul className="text-foreground-muted list-disc list-inside space-y-2">
                             <li>Guided import wizard for file uploads.</li>
-                            <li>Import 10,000s of trades in under 10s.</li>
+                            <li>Import 1,000s of trades in under 10s.</li>
                             <li>{`Auto-sync trades after each trading session.`}</li>
                         </ul>
                     </div>
