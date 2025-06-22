@@ -24,9 +24,12 @@ export default function Footer() {
                         Give feedback, request a feature, report a bug or{" "}
                         <br className="block sm:hidden" />
                         just say hi on{" "}
-                        <span className="font-bold text-sm sm:text-base">
-                            hey@arthveda.io
-                        </span>
+                        <a
+                            href="mailto:hey@arthveda.app"
+                            className="font-bold text-sm! sm:text-base!"
+                        >
+                            hey@arthveda.app
+                        </a>
                     </p>
 
                     <p className="text-center text-xs sm:text-sm text-foreground-muted">
