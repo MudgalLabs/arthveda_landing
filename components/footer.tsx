@@ -17,7 +17,19 @@ export default function Footer() {
                             className="text-sm! sm:text-base! inline-flex items-center"
                         >
                             Mudgal Labs <ArrowUpRight size={18} />
-                        </a>
+                        </a>{" "}
+                        Licensed under{" "}
+                        <span className="text-muted-foreground text-xs">
+                            <a
+                                className="text-sm! sm:text-base!"
+                                href="https://github.com/MudgalLabs/arthveda/blob/main/LICENSE"
+                                title="Business Source License 1.1 — personal use allowed, hosting restricted"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                BSL 1.1
+                            </a>
+                        </span>
                     </p>
 
                     <p className="text-sm sm:text-base">
