@@ -14,7 +14,7 @@ export default function Navbar() {
     const getStarted = useMemo(
         () => (
             <a
-                href="https://arthveda.ceoshikhar.com"
+                href="https://web.arthveda.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => posthog.capture("Clicked Get Started")}
