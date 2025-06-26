@@ -71,7 +71,7 @@ function MotivationCard({
     content: React.ReactNode;
 }) {
     return (
-        <div className="flex gap-4 border-1 transition-colors duration-300 ease-in-out border-foreground-muted hover:border-foreground rounded-md px-4 py-6">
+        <div className="flex gap-4 border-1 transition-colors duration-300 ease-in-out border-accent/70 hover:border-primary rounded-md px-4 py-6">
             <div className="shrink-0 mt-1">{icon}</div>
 
             <div>

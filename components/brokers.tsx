@@ -46,14 +46,17 @@ export default function Brokers() {
                             href={homepage}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="relative block group"
                         >
-                            <Image
-                                src={svg}
-                                alt={`${name} logo`}
-                                width={150}
-                                height={40}
-                                // className="grayscale contrast-60 hover:grayscale-0 hover:contrast-100"
-                            />
+                            <div className="relative">
+                                <Image
+                                    src={svg}
+                                    alt={`${name} logo`}
+                                    width={150}
+                                    height={40}
+                                    // className="grayscale brightness-70 contrast-50 hover:brightness-100 hover:contrast-0 transition-all duration-100 hover:from-foreground hover:to-foreground"
+                                />
+                            </div>
                         </a>
                         {isComingSoon && (
                             <Tag
