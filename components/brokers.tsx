@@ -18,7 +18,7 @@ export default function Brokers() {
             name: "Upstox",
             svg: "/svgs/upstox.svg",
             homepage: "https://upstox.com/",
-            isComingSoon: true,
+            isComingSoon: false,
         },
         /* Add more brokers as integration ships */
     ];

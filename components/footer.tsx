@@ -6,10 +6,7 @@ export default function Footer() {
             <div className="py-6 md:py-10 flex-center">
                 <div className="space-y-2 text-center">
                     <p className="text-sm sm:text-base inline-block text-foreground">
-                        <span className="font-semibold text-foreground">
-                            Arthveda{" "}
-                        </span>
-                        is designed and developed by{" "}
+                        Built with 🤍️ by{" "}
                         <a
                             href="https://github.com/MudgalLabs"
                             target="_blank"
@@ -17,19 +14,7 @@ export default function Footer() {
                             className="text-sm! sm:text-base! inline-flex items-center"
                         >
                             Mudgal Labs <ArrowUpRight size={18} />
-                        </a>{" "}
-                        Licensed under{" "}
-                        <span className="text-muted-foreground text-xs">
-                            <a
-                                className="text-sm! sm:text-base!"
-                                href="https://github.com/MudgalLabs/arthveda/blob/main/LICENSE"
-                                title="Business Source License 1.1 — personal use allowed, hosting restricted"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                BSL 1.1
-                            </a>
-                        </span>
+                        </a>
                     </p>
 
                     <p className="text-sm sm:text-base">
@@ -42,10 +27,6 @@ export default function Footer() {
                         >
                             hey@arthveda.app
                         </a>
-                    </p>
-
-                    <p className="text-center text-xs sm:text-sm text-foreground-muted">
-                        Thank you for being here! 🤍
                     </p>
                 </div>
             </div>
