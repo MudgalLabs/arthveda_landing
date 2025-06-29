@@ -71,7 +71,7 @@ body {
 }
 
 a {
-    @apply text-link font-content text-sm font-semibold underline-offset-5 hover:underline;
+    @apply text-link font-content text-sm font-medium underline-offset-5 hover:underline;
 }
 
 button {

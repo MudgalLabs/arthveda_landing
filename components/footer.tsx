@@ -1,9 +1,16 @@
-import { ArrowUpRight } from "lucide-react"; // Lucide has GitHub icon
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
     return (
         <footer className="border-t border-accent-muted mt-12 sm:mt-24">
-            <div className="py-6 md:py-10 flex-center">
+            <div className="flex-center gap-x-2 mt-2">
+                <p className="text-sm">© 2025 Arthveda </p>
+                <Link href="/terms">Terms of Service</Link>
+                <Link href="/privacy">Privacy Policy</Link>
+            </div>
+
+            <div className="py-4 flex-center">
                 <div className="space-y-2 text-center">
                     <p className="text-sm sm:text-base inline-block text-foreground">
                         Built with 🤍️ by{" "}
