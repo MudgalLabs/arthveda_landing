@@ -10,8 +10,6 @@ export default function OpenDemo() {
         <div className="flex-center">
             <a
                 href="https://demo.arthveda.app/"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => posthog.capture("Clicked Open Demo")}
             >
                 <Button className="demo-button">

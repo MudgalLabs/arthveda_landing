@@ -15,8 +15,6 @@ export default function Navbar() {
         () => (
             <a
                 href="https://web.arthveda.app"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => posthog.capture("Clicked Get Started")}
             >
                 <Button className="w-full" onClick={() => setMenuOpen(false)}>
