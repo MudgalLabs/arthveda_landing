@@ -153,9 +153,9 @@ select:-webkit-autofill:focus {
 }
 
 @utility flex-x {
-    @apply flex items-center gap-x-2;
+    @apply flex flex-row items-center gap-x-2;
 }
 
 @utility flex-y {
-    @apply flex justify-center gap-y-2;
+    @apply flex flex-col justify-center gap-y-2;
 }

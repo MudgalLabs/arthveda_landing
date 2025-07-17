@@ -47,9 +47,8 @@ export default function TermsPage() {
 
             <h2 className="sub-heading mt-4">4. Source Availability</h2>
             <p>
-                Arthveda’s source code is <strong>publicly available</strong> on
-                GitHub to encourage transparency and community contribution.
-                View it here:{" "}
+                Arthveda’s is <strong>open source</strong> on GitHub to promote
+                transparency and build trust. You can view it here:{" "}
                 <a
                     className="text-base!"
                     href="https://github.com/MudgalLabs/arthveda"
@@ -60,9 +59,7 @@ export default function TermsPage() {
                 </a>
             </p>
             <p>
-                Arthveda is licensed under the{" "}
-                <strong>Business Source License (BSL)</strong>, which allows
-                viewing the code but restricts certain uses.
+                Note: Arthveda is licensed under the <strong>AGPL-3.0</strong>.
             </p>
 
             <h2 className="sub-heading mt-4">5. Service Availability</h2>

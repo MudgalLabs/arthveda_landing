@@ -1,7 +1,7 @@
 export default function PrivacyPage() {
     return (
         <div className="mt-12">
-            <h1 className="big-heading mb-4">Privacy Policy</h1>
+            <h1 className="big-heading mb-12">Privacy Policy</h1>
 
             <p className="mb-2">
                 <strong>Effective Date:</strong> June 29, 2025
@@ -64,9 +64,8 @@ export default function PrivacyPage() {
                 5. Transparency and Source Availability
             </h2>
             <p>
-                Arthveda’s source code is <strong>publicly available</strong> on
-                GitHub to promote transparency and build trust. You can view it
-                here:{" "}
+                Arthveda’s is <strong>open source</strong> on GitHub to promote
+                transparency and build trust. You can view it here:{" "}
                 <a
                     className="text-base!"
                     href="https://github.com/MudgalLabs/arthveda"
@@ -77,9 +76,7 @@ export default function PrivacyPage() {
                 </a>
             </p>
             <p>
-                Note: Arthveda is licensed under the{" "}
-                <strong>Business Source License (BSL)</strong>, which allows
-                source visibility but restricts commercial use.
+                Note: Arthveda is licensed under the <strong>AGPL-3.0</strong>.
             </p>
 
             <h2 className="sub-heading mt-4">6. Your Rights</h2>

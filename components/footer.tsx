@@ -4,10 +4,18 @@ import { ArrowUpRight } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="border-t border-accent-muted mt-12 sm:mt-24">
-            <div className="flex-center gap-x-2 mt-2">
-                <p className="text-sm">© 2025 Arthveda </p>
-                <Link href="/terms">Terms of Service</Link>
-                <Link href="/privacy">Privacy Policy</Link>
+            <div className="flex-x items-start justify-between mt-2">
+                <div>
+                    <p className="text-sm">© 2025 Arthveda</p>
+                </div>
+
+                <div className="flex-y sm:flex-x gap-x-4!">
+                    <Link href="/terms">Terms of Service</Link>
+                    <Link href="/privacy">Privacy Policy</Link>
+                    <Link href="/refund">Refund Policy</Link>
+                    <Link href="/about">About Us</Link>
+                    <Link href="/contact">Contact Us</Link>
+                </div>
             </div>
 
             <div className="py-4 flex-center">
