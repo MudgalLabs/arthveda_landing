@@ -27,7 +27,7 @@ export default function Brokers() {
         <section id="brokers" className="mt-24">
             <div className="text-center mb-8">
                 <h2 className="big-heading md:max-w-[80%] mx-auto">
-                    You save hours every week through seamless integration with{" "}
+                    Import trades through seamless integration with{" "}
                     <span className="text-primary font-semibold!">
                         your broker.
                     </span>

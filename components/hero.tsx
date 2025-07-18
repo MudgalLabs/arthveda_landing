@@ -126,6 +126,18 @@ export default function Hero() {
                     loading="lazy"
                 />
             </a>
+
+            <div className="h-2" />
+
+            <div className="text-center">
+                <small className="italic text-muted-foreground">
+                    Arthveda is not a trading platform and does not facilitate
+                    any financial transactions or offer investment advice. It is
+                    a trade journaling and analytics tool designed solely to
+                    help users log, review, and analyze their own historical
+                    trades.
+                </small>
+            </div>
         </main>
     );
 }
