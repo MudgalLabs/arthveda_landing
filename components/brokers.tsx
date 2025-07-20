@@ -28,7 +28,7 @@ export default function Brokers() {
             <div className="text-center mb-8">
                 <h2 className="big-heading md:max-w-[80%] mx-auto">
                     Import trades through seamless integration with{" "}
-                    <span className="text-primary font-semibold!">
+                    <span className="text-accent font-semibold!">
                         your broker.
                     </span>
                 </h2>
@@ -46,7 +46,7 @@ export default function Brokers() {
                             href={homepage}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative block group"
+                            className="relative block group hover:-translate-y-1 transition-transform"
                         >
                             <div className="relative">
                                 <Image
@@ -61,7 +61,6 @@ export default function Brokers() {
                         {isComingSoon && (
                             <Tag
                                 className="absolute -bottom-5 right-0"
-                                variant="primary"
                                 size="small"
                             >
                                 Coming Soon

@@ -12,7 +12,7 @@ export default function OpenDemo() {
                 href="https://demo.arthveda.app/"
                 onClick={() => posthog.capture("Clicked Open Demo")}
             >
-                <Button className="demo-button">
+                <Button className="arrow-button">
                     Open Demo
                     <IconRight className="arrow-icon" size={18} />
                 </Button>

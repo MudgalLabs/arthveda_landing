@@ -6,7 +6,7 @@ export default function Motivation() {
             <div className="text-center mb-14">
                 <h2 className="big-heading">
                     Brokers give you numbers. Arthveda gives you{" "}
-                    <span className="font-semibold! text-primary">
+                    <span className="font-semibold! text-accent">
                         real insight.
                     </span>
                 </h2>
@@ -14,7 +14,7 @@ export default function Motivation() {
 
             <div className="max-w-4xl mx-auto grid gap-10 md:grid-cols-2">
                 <MotivationCard
-                    icon={<Rocket className="h-6 w-6 text-primary" />}
+                    icon={<Rocket className="h-6 w-6 text-accent" />}
                     title="Built for Indian traders"
                     content={
                         <>
@@ -25,7 +25,7 @@ export default function Motivation() {
                 />
 
                 <MotivationCard
-                    icon={<FileBarChart className="h-6 w-6 text-primary" />}
+                    icon={<FileBarChart className="h-6 w-6 text-accent" />}
                     title="Brokers merge your trades"
                     content={
                         <>
@@ -36,7 +36,7 @@ export default function Motivation() {
                 />
 
                 <MotivationCard
-                    icon={<LineChart className="h-6 w-6 text-primary" />}
+                    icon={<LineChart className="h-6 w-6 text-accent" />}
                     title="No real trading insights"
                     content={
                         <>
@@ -47,7 +47,7 @@ export default function Motivation() {
                 />
 
                 <MotivationCard
-                    icon={<Sheet className="h-6 w-6 text-primary" />}
+                    icon={<Sheet className="h-6 w-6 text-accent" />}
                     title="Manual journaling sucks"
                     content={
                         <>

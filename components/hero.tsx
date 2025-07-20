@@ -1,5 +1,6 @@
 import Image from "next/image";
-import OpenDemo from "@/components/open_demo";
+// import OpenDemo from "@/components/open_demo";
+import { GetStarted } from "./get_started";
 
 const slideInStyles = `
 @keyframes slideInFromBottom {
@@ -64,11 +65,11 @@ const slideInStyles = `
   transition: all 0.2s ease-in-out;
 }
 
-.demo-button:hover .arrow-icon {
+.arrow-button:hover .arrow-icon {
   animation: slideOutRight 0.15s ease-in-out forwards, slideInLeft 0.15s ease-in-out 0.15s forwards;
 }
 
-.demo-button:not(:hover) .arrow-icon {
+.arrow-button:not(:hover) .arrow-icon {
   animation: slideOutLeft 0.15s ease-in-out forwards, slideInRight 0.15s ease-in-out 0.15s forwards;
 }
 `;
@@ -76,23 +77,30 @@ const slideInStyles = `
 export default function Hero() {
     return (
         <main className="mt-12 md:mt-24">
-            <h1 className="w-[80%] flex flex-wrap mx-auto justify-center gap-x-2 md:gap-x-3.5 gap-y-1 md:gap-y-2 text-3xl sm:text-5xl md:text-7xl font-medium lg:font-semibold">
-                Turn every trade{" "}
-                <span className="inline-block text-primary">into insight</span>
+            <h1 className="w-[80%] flex flex-wrap mx-auto justify-center gap-x-2 text-center md:gap-x-3.5 gap-y-1 md:gap-y-2 text-3xl sm:text-5xl md:text-7xl font-medium lg:font-semibold leading-tight">
+                The Trading Journal Built for
+                <span className="inline! text-accent">Indian Markets</span>
             </h1>
 
             <div className="h-6" />
 
-            <p className="text-center text-sm sm:text-base md:text-xl text-foreground">
-                Seamless integrations. Powerful analytics.{" "}
-                <br className="block sm:hidden" />{" "}
-                <span className="font-medium">
-                    Built exclusively for Indian traders.
-                </span>
+            <p className="text-center mx-auto text-sm sm:text-base md:w-[75%] md:text-xl text-foreground">
+                Arthveda is an{" "}
+                <a
+                    className="text-sm! sm:text-base! md:text-xl!"
+                    href="https://github.com/MudgalLabs/arthveda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    open-source
+                </a>{" "}
+                trading journal that imports your trades, reveals powerful
+                analytics, and helps you improve.
             </p>
             <div className="h-8" />
 
-            <OpenDemo />
+            {/* <OpenDemo /> */}
+            <GetStarted />
 
             <div className="h-16" />
 
@@ -108,7 +116,7 @@ export default function Hero() {
                     alt="Arthveda Dashboard"
                     width={1900}
                     height={900}
-                    className={`hidden md:block w-full md:w-[85%] mx-auto h-auto outline-offset-1 outline-1 md:outline-2 hover:outline-accent outline-accent-muted rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
+                    className={`hidden md:block w-full md:w-[100%] mx-auto h-auto outline-offset-1 outline-1 md:outline-1 hover:outline-border-hover outline-border-subtle rounded-none md:rounded-md transition-all duration-300 ease-in-out animate-slide-in-bottom`}
                     loading="lazy"
                 />
             </a>
