@@ -3,7 +3,7 @@ import { Tag } from "@/ui/tag";
 
 const roadmap = [
     {
-        title: "Tags & Labels",
+        title: "Tags and Tag Groups",
         icon: "🔖",
         status: "In Progress",
         description: `Give structure to your trades. Power filters, insights, and journaling.

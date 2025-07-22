@@ -63,13 +63,13 @@ export default function Navbar() {
                     {/* Desktop Nav */}
                     <div className="hidden lg:flex flex-x md:gap-x-4 lg:gap-x-8 items-center px-14">
                         <li>
-                            <Link href="#brokers">Brokers</Link>
+                            <Link href="/#brokers">Brokers</Link>
                         </li>
                         <li>
-                            <Link href="#motivation">Motivation</Link>
+                            <Link href="/#motivation">Motivation</Link>
                         </li>
                         <li>
-                            <Link href="#features">Features</Link>
+                            <Link href="/#features">Features</Link>
                         </li>
                         <li>
                             <Link href="/roadmap">Roadmap</Link>
@@ -85,13 +85,7 @@ export default function Navbar() {
                         </li>
 
                         <li>
-                            <a
-                                href="https://github.com/MudgalLabs/arthveda"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub
-                            </a>
+                            <Link href="/pricing">Pricing</Link>
                         </li>
                     </div>
 
@@ -123,7 +117,7 @@ export default function Navbar() {
                     <ul className="flex flex-col gap-y-2 py-4">
                         <li>
                             <Link
-                                href="#brokers"
+                                href="/#brokers"
                                 onClick={() => setMenuOpen(false)}
                             >
                                 Brokers
@@ -131,7 +125,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link
-                                href="#motivation"
+                                href="/#motivation"
                                 onClick={() => setMenuOpen(false)}
                             >
                                 Motivation
@@ -139,7 +133,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link
-                                href="#features"
+                                href="/#features"
                                 onClick={() => setMenuOpen(false)}
                             >
                                 Features
@@ -163,13 +157,12 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="https://github.com/MudgalLabs/arthveda"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link
+                                href="/pricing"
+                                onClick={() => setMenuOpen(false)}
                             >
-                                GitHub
-                            </a>
+                                Pricing
+                            </Link>
                         </li>
                     </ul>
                 </div>
