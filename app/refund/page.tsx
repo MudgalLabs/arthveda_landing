@@ -9,8 +9,8 @@ export default function RefundPage() {
 
             <p className="mb-4">Thank you for subscribing to Arthveda.</p>
             <p className="mb-4">
-                All subscription purchases are final. We do not offer refunds,
-                whether for monthly or yearly plans.
+                All subscription purchases are final. We <strong>DO NOT</strong>{" "}
+                offer refunds, whether for monthly or yearly plans.
             </p>
             <p className="mb-4">
                 We encourage you to explore Arthveda using the free plan before
